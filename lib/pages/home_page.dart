@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text('My Note App'),centerTitle: true,backgroundColor: Colors.grey.shade300),
       drawer: Drawer(
+        width: 250,
         child: Column(children: [
 
 
