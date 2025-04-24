@@ -6,7 +6,14 @@ class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(title: Text('My Note App'),centerTitle: true,backgroundColor: Colors.blue.shade200,),
+      appBar: AppBar(title: Text('My Note App'),centerTitle: true,backgroundColor: Colors.grey.shade300),
+      drawer: Drawer(
+        child: Column(children: [
+
+
+        ],),
+      ),
     );
+
   }
 }
