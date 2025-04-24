@@ -7,7 +7,17 @@ class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(title: Text('SimpleNoteX'),centerTitle: true,backgroundColor: Colors.grey.shade300),
+        appBar:AppBar(
+          title: Text('SimpleNoteX'),
+          centerTitle: true,
+          backgroundColor: Colors.grey.shade200,
+        leading: Builder(builder: (context)=>IconButton(onPressed:() {
+      Scaffold.of(context).openDrawer();
+
+    }, icon:Icon(Icons.menu,color: Colors.black,)),
+
+    )
+        ),
       drawer: Drawer(
         surfaceTintColor: Colors.blue.shade900,
         width: 250,
@@ -28,7 +38,6 @@ class HomePage extends StatelessWidget{
         ),
 
       ),
-
     );
 
   }
