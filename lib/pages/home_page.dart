@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget{
         backgroundColor: Colors.grey.shade100,
         child: Column(
           children: [
-            DrawerHeader(child: CircleAvatar(radius: 60,backgroundColor: Colors.purple.shade200,)),
+            DrawerHeader(child: CircleAvatar(radius: 60,backgroundImage:AssetImage('lib/assets/images/bash.jpeg'),)),
             Padding(padding: EdgeInsets.all(2),child: ListTile(
               onTap:() {
 
