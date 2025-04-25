@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget{
         backgroundColor: Colors.grey.shade200,
         items: [
         BottomNavigationBarItem(icon:Icon(Icons.save,color: Colors.green,),label: 'Save'),
-        BottomNavigationBarItem(icon: Icon(Icons.add,color: Colors.black,),label: 'New'),
+        BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.black,),label: 'Share'),
         // BottomNavigationBarItem(icon:Icon(Icons.search),label: 'Search')
       ]))
 
