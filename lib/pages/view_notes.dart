@@ -1,0 +1,1 @@
+//handle view notes functionality
