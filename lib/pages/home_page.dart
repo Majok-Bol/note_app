@@ -1,11 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:note_app/pages/text_area.dart';
+import 'package:note_app/themes/themes_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget{
   const HomePage({super.key});
   @override
   Widget build(BuildContext context){
+
     return Scaffold(
       appBar: AppBar(
         title: Text('NoteFlow'),
@@ -36,6 +39,7 @@ class HomePage extends StatelessWidget{
             Padding(padding: EdgeInsets.all(2),
               child: ListTile(
                 onTap:() {
+                  Provider.of<ThemeProvider>(context,listen: false).toggleTheme();
 
                 },
                 title:Text('Switch Mode'),
@@ -44,6 +48,7 @@ class HomePage extends StatelessWidget{
         ),
       ),
       body:TextArea(),
+
       bottomNavigationBar:Theme(data:Theme.of(context).copyWith(bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedLabelStyle: TextStyle(fontSize:15),
         unselectedLabelStyle: TextStyle(fontSize: 15),
@@ -53,9 +58,11 @@ class HomePage extends StatelessWidget{
         BottomNavigationBarItem(icon:Icon(Icons.save,color: Colors.green,),label: 'Save'),
         BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.black,),label: 'Share'),
         // BottomNavigationBarItem(icon:Icon(Icons.search),label: 'Search')
-      ]))
+      ])),
+
 
     );
+
   }
 
 }
