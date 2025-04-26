@@ -13,13 +13,13 @@ class HomePage extends StatelessWidget{
       appBar: AppBar(
         title: Text('NoteFlow'),
         centerTitle:true,
-        backgroundColor: Colors.grey.shade300,
+        // backgroundColor: Colors.grey.shade700,
         leading: Builder(builder:(context)=>IconButton(onPressed:(){
           Scaffold.of(context).openDrawer();
         },icon: Icon(Icons.menu),)),
       ),
       drawer:Drawer(
-        backgroundColor: Colors.grey.shade100,
+        // backgroundColor: Colors.grey.shade100,
         child: Column(
           children: [
             DrawerHeader(child: CircleAvatar(radius: 60,backgroundImage:AssetImage('lib/assets/images/bash.jpeg'),)),
@@ -52,11 +52,13 @@ class HomePage extends StatelessWidget{
       bottomNavigationBar:Theme(data:Theme.of(context).copyWith(bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedLabelStyle: TextStyle(fontSize:15),
         unselectedLabelStyle: TextStyle(fontSize: 15),
+        selectedItemColor: Colors.black87,
+        unselectedItemColor: Colors.black87,
       )), child:BottomNavigationBar(
-        backgroundColor: Colors.grey.shade200,
+        // backgroundColor: Colors.grey.shade200,
         items: [
         BottomNavigationBarItem(icon:Icon(Icons.save,color: Colors.green,),label: 'Save'),
-        BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.black,),label: 'Share'),
+        BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.blue,),label: 'Share'),
         // BottomNavigationBarItem(icon:Icon(Icons.search),label: 'Search')
       ])),
 
