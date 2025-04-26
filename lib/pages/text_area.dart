@@ -18,6 +18,7 @@ class TextArea extends StatelessWidget{
           expands: true,
           maxLines: null,
           minLines: null,
+          cursorColor: Colors.black,
           textAlignVertical: TextAlignVertical.top,
           decoration: InputDecoration(
             border: InputBorder.none,
