@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:note_app/pages/dialog_box.dart';
 import 'package:note_app/pages/text_area.dart';
 import 'package:note_app/themes/themes_provider.dart';
 import 'package:provider/provider.dart';
@@ -32,6 +33,7 @@ class HomePage extends StatelessWidget{
             Padding(padding: EdgeInsets.all(2),
               child: ListTile(
                 onTap:() {
+                  DialogBox();
 
                 },
                 title:Text('Favorites'),
@@ -57,6 +59,7 @@ class HomePage extends StatelessWidget{
       )), child:BottomNavigationBar(
         // backgroundColor: Colors.grey.shade200,
         items: [
+          // BottomNavigationBarItem(icon:Icon(Icons.home,color: Colors.black,),label: 'Home'),
         BottomNavigationBarItem(icon:Icon(Icons.save,color: Colors.green,),label: 'Save'),
         BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.blue,),label: 'Share'),
         // BottomNavigationBarItem(icon:Icon(Icons.search),label: 'Search')
