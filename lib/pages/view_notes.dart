@@ -1,8 +1,8 @@
 //handle view notes functionality
 import 'package:flutter/material.dart';
 class ViewNotes extends StatefulWidget {
-  const ViewNotes({super.key});
-
+  // const ViewNotes({super.key});
+@override
   ViewNotesState createState() => ViewNotesState();
 }
 class ViewNotesState extends State<ViewNotes>{
