@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:note_app/pages/dialog_box.dart';
 import 'package:note_app/pages/text_area.dart';
 import 'package:note_app/themes/themes_provider.dart';
 import 'package:provider/provider.dart';
@@ -28,13 +27,13 @@ class HomePage extends StatelessWidget{
               onTap:() {
 
               },
-            //   title:Text('View notes'),
-            //   leading: Icon(Icons.notes),),),
-            // Padding(padding: EdgeInsets.all(2),
-            //   child: ListTile(
-            //     onTap:() {
-            //
-            //     },
+              title:Text('View notes'),
+              leading: Icon(Icons.notes),),),
+            Padding(padding: EdgeInsets.all(2),
+              child: ListTile(
+                onTap:() {
+
+                },
                 title:Text('Favorites'),
                 leading: Icon(Icons.star_border,),),),
             Padding(padding: EdgeInsets.all(2),
