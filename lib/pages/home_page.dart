@@ -28,14 +28,13 @@ class HomePage extends StatelessWidget{
               onTap:() {
 
               },
-              title:Text('View notes'),
-              leading: Icon(Icons.notes),),),
-            Padding(padding: EdgeInsets.all(2),
-              child: ListTile(
-                onTap:() {
-                  DialogBox();
-
-                },
+            //   title:Text('View notes'),
+            //   leading: Icon(Icons.notes),),),
+            // Padding(padding: EdgeInsets.all(2),
+            //   child: ListTile(
+            //     onTap:() {
+            //
+            //     },
                 title:Text('Favorites'),
                 leading: Icon(Icons.star_border,),),),
             Padding(padding: EdgeInsets.all(2),
@@ -50,24 +49,13 @@ class HomePage extends StatelessWidget{
         ),
       ),
       body:TextArea(),
+      floatingActionButton: FloatingActionButton.extended(onPressed:() {
 
-      bottomNavigationBar:Theme(data:Theme.of(context).copyWith(bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedLabelStyle: TextStyle(fontSize:15),
-        unselectedLabelStyle: TextStyle(fontSize: 15),
-        selectedItemColor: Colors.black87,
-        unselectedItemColor: Colors.black87,
-      )), child:BottomNavigationBar(
-        // backgroundColor: Colors.grey.shade200,
-        items: [
-          // BottomNavigationBarItem(icon:Icon(Icons.home,color: Colors.black,),label: 'Home'),
-        BottomNavigationBarItem(icon:Icon(Icons.save,color: Colors.green,),label: 'Save'),
-        BottomNavigationBarItem(icon: Icon(Icons.share,color: Colors.blue,),label: 'Share'),
-        // BottomNavigationBarItem(icon:Icon(Icons.search),label: 'Search')
-      ])),
-
-
+      },icon: Icon(Icons.save,color: Colors.black,),label: Text('save',style: TextStyle(fontSize: 19,color: Colors.black),),backgroundColor: Colors.blue.shade400,),
     );
 
+
   }
+
 
 }
